@@ -3,7 +3,7 @@ pipeline {
     stages {
        stage('checkout'){
            steps{
-               checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins', url: 'https://github.com/grigoryevpavel/roles-nginx']])
+               checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins', url: 'https://github.com/grigoryevpavel/jenkins_role_nginx']])
            }
        }
        stage('test'){
