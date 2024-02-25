@@ -1,0 +1,29 @@
+galaxy_info:
+  role_name: jenkins_role_nginx
+  author: Pavel Grigoryev
+  description: Install nginx after test by molecule and configure  default port to allow connections
+  company: Grigoryev
+
+  license: license ( MIT)
+
+  min_ansible_version: 2.10
+
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - focal
+
+  galaxy_tags:  
+    - development
+    - web
+    - nginx
+    - reverse
+    - proxy
+    - load
+    - balancer
+
